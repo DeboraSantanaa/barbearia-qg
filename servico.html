@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--Font Awesome-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap"
+        rel="stylesheet">
+    <!--Estilos css externo-->
+    <link rel="stylesheet" href="./estilo/estilo.css">
+    <link rel="stylesheet" href="./estilo/global.css">
+    <link rel="shortcut icon" href="./img/img-menu.png" type="image/x-icon" >
+    <title>Serviços - Barbearia</title>
+</head>
+
+<body class="bodyServiços">
+
+    <!-- Menu de Navegação -->
+    <header class="fixed-top">
+        <nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <article class="navbar-brand">
+                </article>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav text-center ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="./index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./servico.html">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./cursos.html">Cursos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contato.html">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./localizacao.html">Localização</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="position-fixed top-0 start-0 p-3 logo-menu">
+            <img src="./img/img-menu.png" alt="">
+        </div>
+    </header>
+
+    
+        <!-- Seção de serviços -->
+        <section class="section-servicos container ">
+            <h2 class="titulo-servicos">Nossos Serviços</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+                <div class="col">
+                    <div class="card-servicos" style="background-image: url('./img/corte-servico.jpg');">
+                        <div class="card-overlay">
+                            <i class="fa-solid fa-scissors"></i>
+                            <h5 class="card-title">Corte de Cabelo</h5>
+                            <p>Cortes modernos e clássicos feitos para seu estilo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card-servicos" style="background-image: url('./img/barba-servico.jpg');">
+                        <div class="card-overlay">
+
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD9ElEQVR4nO3az4scVRAH8DL7qrMjRoUYjD/wx0GFnKKgBP8ATwqi4llRiF70rJf1oCxelLCKiOjBm+JBEkjQmarOLnHFH+hBDwoaEFT8bRRDMFMvL1TvJsom4s5sz7zu3u8H6jLs1LxX1d3b3e8RAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANQo9Wl7kuKmKgZ0eZqjLbXlnqMtVc4z+fu0va7cnZEO0sWmYW/UsN+Ef4/K6d9hwn+a8qJJeCIdLm4YOX+/uNE0PGnKS57rPPl/q35bw14fC21WqaTLovLzpvzX2iLF/wgTPhWVD6Z+uPV/8w/CbVH40Op31pd/ZSzP+dhoM7GSHzblY+stVDy3cDEqL6Q+XbI2t38WhV9Y/Ztx8x8z5Yeo61JJO6PwgXELFc8pXPgulWHPP/nDHv+srvx+KfP/OdRFw0Fxlwn/XF+x+Mxl7IQJ378aJyaQ/6dhOXMndUV6k2ai8DOjXMvj6EU7Nen8Ufhpnwu1WVqiHVG4P6lCxWmHcN/nRG00lJk7TMO32YuoNZ8tyj/65ZfaIi1TLwrvm+QlJDYiwuuppIuoyYZlcZ9JOJq/WDylsyV8PZTiHmqSVFIYanGvCX+Uu0AxW2P4Q2+M1yJPE5Zox7As7o7CL/o1NXdBYkPClH/wh1KvzUSe9lPZuzoqz0cJb/sdhkn4xJR/zT3x2JIw5V+8ZtWdptdQeT4NeleN1wyZvRZHP0/kLEr92WtGboi/K8p9hMWuhvC+cRryTvaBa0dD+NDoDRF+NvvAtbMxP3JD0iJdYcp/NGDwqUvhr/b9rTeNu26RewKxY2ElPzBWM6qzJNEFUcJbuScROxPhjbGbcbYpy9Qz5Q/yT4ZbHab8cdpPF264IVVT3u1duZneUcXamxG+8v/JtTTjbFNK2mkSPs09udiyMA2fj/10vo6mXOrbaXJPMrYkTPj9ie/9qtY7lF/OPdnY/HgplTRL0+Kvm034+wZMPDUpfNeLv+2lHKo9UMoLJnwycxG+MA1f5h0D/+3vqBqx+zEtbr0+anht2o0xCUf9QcsXhjxM+MFp3w2uNCK8ksqt11HTVHdivo92wkUx5UVfpTzfthz/rFrBnPDNR3Uw+H7jNmyk8yf8NOBbovBT/lBZx5ljGr5Z2XfLu9c9jsN888r+4eq7G2wAn6zmomHO81Kb+Z1ZknC7aXi8WmcRPuD35776aMrH10x86Is4pvxe1PCqDcIjaVDs2vgBUuwyCY9WOZWXffHNf2vNmXe8GpOEz1a3vC6Yhsd87FO9Y2qCdIS25Zh0dbAcoW3T/l0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADK6zSk18LKNp0tHQAAAABJRU5ErkJggg=="
+                                alt="english-mustache">
+                            <h5 class="card-title">Barba e Bigode</h5>
+                            <p>Cuide da sua barba com estilo e precisão.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card-servicos" style="background-image: url('./img/penteado-servico.jpg');">
+                        <div class="card-overlay">
+                            <img src="data:image/png;base64,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"
+                                alt="external-Hairdryer-health-beauty-and-fashion-vectorslab-glyph-vectorslab">
+                            <h5 class="card-title">Penteado Masculino</h5>
+                            <p>Perfeito para eventos e ocasiões especiais.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card-servicos" style="background-image: url('./img/penteado-hidratacao.jpg');">
+                        <div class="card-overlay">
+                            <i class="fa-solid fa-tint"></i>
+                            <h5 class="card-title">Hidratação Capilar</h5>
+                            <p>Deixe seus fios saudáveis e brilhantes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card-servicos" style="background-image: url('./img/indantil-servico.jpg');">
+                        <div class="card-overlay">
+                            <i class="fa-solid fa-child"></i>
+                            <h5 class="card-title">Corte Infantil</h5>
+                            <p>Conforto e diversão para os pequenos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card-servicos" style="background-image: url('./img/coloracao-img.jpg');">
+                        <div class="card-overlay">
+                            <i class="fa-solid fa-brush"></i>
+                            <h5 class="card-title">Coloração</h5>
+                            <p>Transforme o visual com coloração exclusiva.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+
+    <section class="container section-profissionais ">
+        <!-- Título equipe -->
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <h1 class="titulo-servicos">Nossa Equipe</h1>
+                <p class="subtitulo-profissionais">Conheça os especialistas que fazem a diferença.</p>
+                <hr>
+            </div>
+        </div>
+    
+        <div class="row justify-content-center">
+            <!-- profissional 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <figure class="profissionais-item position-relative">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="./img/profissional2.jpg" alt="Paulo Santos">
+                        <div class="profissionais-overlay">
+                            <div class="d-flex align-items-center justify-content-start">
+                                <a class="btn btn-light btn-square rounded-circle mx-1" target="_blank" href="https://www.instagram.com/debora_saantana_/"><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-light btn-square rounded-circle mx-1" target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-light btn-square rounded-circle mx-1" target="_blank" href="https://www.linkedin.com/in/debora-santana-7959141a0/"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <figcaption class="texto-card-profissionais text-center p-4">
+                        <h5 class="text-uppercase text-light">Paulo Santos</h5>
+                        <p class="text-uppercase text-secondary m-0">Barbeiro Júnior</p>
+                    </figcaption>
+                </figure>
+            </div>
+    
+            <!-- profissional 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <figure class="profissionais-item position-relative">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="./img/profissional1.jpg" alt="Paulo Santos">
+                        <div class="profissionais-overlay">
+                            <div class="d-flex align-items-center justify-content-start">
+                                <a class="btn btn-light btn-square rounded-circle mx-1" target="_blank" href="https://www.instagram.com/debora_saantana_/"><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-light btn-square rounded-circle mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-light btn-square rounded-circle mx-1"target="_blank"  href="https://www.linkedin.com/in/debora-santana-7959141a0/"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <figcaption class="texto-card-profissionais text-center p-4">
+                        <h5 class="text-uppercase text-light">Diogo Costa</h5>
+                        <p class="text-uppercase text-secondary m-0">Barbeiro Especialista</p>
+                    </figcaption>
+                </figure>
+            </div>
+    
+            <!-- profissiinal 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <figure class="profissionais-item position-relative">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="./img/profissional3.jpg" alt="Paulo Santos">
+                        <div class="profissionais-overlay">
+                            <div class="d-flex align-items-center justify-content-start">
+                                <a class="btn btn-light btn-square rounded-circle mx-1" target="_blank" href="https://www.instagram.com/debora_saantana_/"><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-light btn-square rounded-circle mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-light btn-square rounded-circle mx-1" target="_blank" href="https://www.linkedin.com/in/debora-santana-7959141a0/"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <figcaption class="texto-card-profissionais text-center p-4">
+                        <h5 class="text-uppercase text-light">Miguel Barbosa</h5>
+                        <p class="text-uppercase text-secondary m-0">Barbeiro Pleno</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    
+
+  
+    <footer class=" rodape text-center py-4 bg-dark text-white">
+        <div class="icons-rodape ">
+            <a href="#" class="btn btn-warning  "><i class="fab fa-twitter"></i></a>
+            <a href="#" class="btn btn-warning "><i class="fab fa-facebook-f"></i></a>
+            <a target="_blank"  href="https://www.linkedin.com/in/debora-santana-7959141a0/" class="btn btn-warning "><i class="fab fa-linkedin-in"></i></a>
+            <a target="_blank" href="https://www.instagram.com/debora_saantana_/" class="btn btn-warning "><i class="fab fa-instagram"></i></a>
+        </div>
+        <hr>
+        <div class=" mt-3">
+            <a target="_blank" href="https://play.google.com/store/games?device=windows"><img src="./img/google.png" alt="Google Play" width="120"></a>
+            <a target="_blank" href="https://www.apple.com/br/app-store/" ><img src="./img/apple.png" alt="App Store" width="120"></a>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Botão WhatsApp -->
+    <a href="https://web.whatsapp.com/" target="_blank" aria-label="Entrar em contato pelo WhatsApp"
+        class="position-fixed bottom-0 end-0 p-3" style="z-index: 1000;">
+        <button id="whatsapp-btn" aria-label="Entrar em contato pelo WhatsApp" class="btn btn-warning rounded-circle"
+            style="font-size: 30px; width: 60px; height: 60px; z-index: 1000;">
+            <i class="fab fa-whatsapp"></i>
+        </button>
+    </a>
+
+
+<!--BOOTSTRAP SCRIPT-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

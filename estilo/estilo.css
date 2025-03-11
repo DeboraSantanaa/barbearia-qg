@@ -1,0 +1,1090 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*-----------------------------Inicio Configuração Principal HOME----------------------*/
+
+
+.principal {
+    color: #fff;
+    position: relative;
+    z-index: 1;
+
+}
+
+
+.tituloPrincipal h3 {
+
+    font-size: 5.5rem;
+    text-shadow: #161616 2px 2px 2px;
+    font-weight: bold;
+    color: #FDBE05;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+ font-family: 'Oswald', sans-serif;
+    position: relative;
+    z-index: 2;
+
+}
+
+
+#subtitulo {
+    font-size: 1.2rem;
+    color: #f9f2f2;
+    line-height: 1.6;
+    max-width: 50%;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 2;
+    font-size: 18px;
+
+}
+
+
+.btn-principal {
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    background-color: #FDBE05;
+    color: #f7f6f3;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+    transition: background-color 0.3s ease;
+}
+
+.btn-principal:hover {
+    background-color: transparent;
+    border: 3px solid #FDBE05;
+    color: #fff;
+}
+
+
+.principal::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #252525c2;
+    z-index: 0;
+
+}
+
+
+
+
+
+/* --------------------------- Configuração HOME --------------------------- */
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    animation: BgAnimation 20s ease-in-out infinite;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .parallax {
+        min-height: 100%; 
+  
+ 
+    }
+
+    #subtitulo{
+        margin-top: 5vh;
+        font-size: 15px;
+    }
+
+    .tituloPrincipal {
+        font-size: 1rem; 
+    }
+    .btn-principal {
+        display: inline-block; 
+        margin-top: 15px;
+    }
+}
+
+@keyframes BgAnimation {
+    0% {
+        background-image: url("../img/img-principal1.jpg");
+    }
+
+    25% {
+        background-image: url("../img/img-principal2.jpg");
+    }
+
+    50% {
+        background-image: url("../img/img-principal3.jpg");
+    }
+
+    75% {
+        background-image: url("../img/img-principal4.jpg");
+    }
+
+    100% {
+        background-image: url("../img/img-principal5.jpg");
+    }
+}
+
+
+
+.parallax2 {
+    background-image: url("../img/pexels-jibarofoto-1453005.jpg");
+    height: 90vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+/* --------------------------- Início Configuração Seção Sobre HOME--------------------------- */
+
+
+.sobre {
+    background-color: #1e1e1e;
+    color: #FFF;
+    padding: 5rem 0;
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+.nome-barbearia {
+    text-shadow: #090909 2px 1px 1px;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #FDBE05;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+ font-family: 'Oswald', sans-serif;
+}
+
+
+.sobre img {
+    width: 100%;
+
+    height: auto;
+
+
+}
+
+
+.sobre p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+
+.sobre .btn {
+    margin-top: 1.5rem;
+    border: 2px solid #FFF;
+    color: #FFF;
+    transition: background-color 0.3s ease;
+    padding: 12px 30px;
+    font-size: 1rem;
+}
+
+.sobre .btn:hover {
+    background-color: #FDBE05;
+    color: #1e1e1e;
+}
+
+
+.row.align-items-center {
+    display: flex;
+    align-items: center;
+}
+
+.logo-sobre img {
+    width: 100%;
+    height: 50vh;
+}
+
+
+.sobre .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* responsividade */
+@media (max-width: 767px) {
+    .nome-barbearia {
+        font-size: 2.5rem;
+    }
+
+    .sobre p {
+        font-size: 1rem;
+    }
+}
+
+
+
+/* --------------------------- Início Configuração Planos de Assinatura HOME --------------------------- */
+
+.card {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+
+.card .span-card-inicio {
+    position: absolute;
+    display: block;
+    background: linear-gradient(90deg, #ffcc00, #FDBE05);
+}
+
+/******* Animação da borda:********/
+.card .span-card-inicio:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    animation: animate1 2s linear infinite;
+}
+
+
+.card .span-card-inicio:nth-child(2) {
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    animation: animate2 2s linear infinite;
+    animation-delay: 0.5s;
+}
+
+
+.card .span-card-inicio:nth-child(3) {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    animation: animate3 2s linear infinite;
+    animation-delay: 1s;
+}
+
+
+.card .span-card-inicio:nth-child(4) {
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    animation: animate4 2s linear infinite;
+    animation-delay: 1.5s;
+}
+
+
+@keyframes animate1 {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes animate3 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes animate4 {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.planos-assinatura {
+    padding: 60px 0;
+    background-image: url("../img/pexels-zvolskiy-1570807.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.titulo {
+    font-family: 'Impact', sans-serif;
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 1rem;
+text-transform: UPPERCASE;
+}
+
+.subtitulo {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+/* .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+
+} */
+
+
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.plano-titulo {
+    font-size: 2rem;
+    color: #FDBE05;
+    margin-bottom: 1rem;
+}
+
+.plano-preco {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.plano-beneficios {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 2rem;
+    color: #777;
+}
+
+.plano-beneficios li {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn-cta {
+    background-color: #FDBE05;
+    color: #1d1d1d;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover {
+    background-color: #fda900;
+    color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 767px) {
+    .titulo {
+        font-size: 2.5rem;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .btn-cta {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+}
+
+
+/* --------------------------- Início Configuração Baixe Nosso App HOME --------------------------- */
+
+
+.baixar-app {
+    background-color: #ffffff;
+    color: #333;
+    width: 100%;
+    height: auto;
+
+}
+
+.titulo-app {
+    font-size: 2.8rem;
+    font-family: 'Impact', sans-serif;
+    color: #FDBE05;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  
+}
+
+.subtitulo-app {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1rem;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btns-app {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 1rem;
+}
+
+.btn-google-play,
+.btn-app-store {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.btn-google-play:hover,
+.btn-app-store:hover {
+    transform: scale(1.1);
+}
+
+.google-play,
+.app-store {
+    width: 170px;
+    height: auto;
+}
+
+.app-img {
+    max-width: 100%;
+    margin-top: 1rem;
+
+}
+
+
+
+/* Responsividade */
+@media (max-width: 767px) {
+    .titulo-app {
+        font-size: 2rem;
+    }
+
+    .subtitulo-app {
+        font-size: 1rem;
+    }
+
+    .btns-app {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .google-play,
+    .app-store {
+        width: 150px;
+    }
+
+    .app-img {
+        max-width: 90%;
+    }
+}
+
+/*********************config sção bebida****************************/
+
+.img-ambientebebida {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.ambiente-bebida {
+    padding: 100px 0;
+    width: 100%;
+    background-color: #1e1e1e;
+
+}
+
+
+.texto-bebida {
+    color: #fff;
+    padding: 30px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+
+.titulo-ambiente {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #FDBE05;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+ font-family: 'Oswald', sans-serif;
+}
+
+
+.imagem-bebida img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+    .ambiente-bebida {
+        margin-bottom: 45px;
+    }
+
+    .texto-bebida {
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .titulo-ambiente {
+        font-size: 2rem;
+    }
+
+    .texto-ambiente {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .imagem-bebida img {
+        border-radius: 4px;
+    }
+}
+
+/*********************FIM PAGINA HOME****************************/
+
+
+/****************************Pagina serviço************************************/
+ .bodyServiços {
+    background: #1a1a1a;
+} 
+
+.section-servicos{
+    margin-top: 20vh;
+    height: 100%;
+}
+
+.card-servicos {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.card-servicos:hover {
+    transform: scale(1.05);
+}
+
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.card-overlay i,
+.card-overlay img {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #FDBE05;
+   
+}
+
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.titulo-servicos {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #FDBE05;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.titulo-servicos::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: #FDBE05;
+    display: block;
+    margin: 10px auto 0;
+}
+
+
+.section-profissionais{
+
+    margin-top: 15vh;
+}
+
+    .subtitulo-profissionais{
+        color: #fff;
+    }
+   
+    
+  
+    .profissionais-item {
+        transition: .5s;
+        max-width: 300px; 
+        height: 400px; 
+        margin: 10px auto; 
+        display: flex;
+        flex-direction: column;
+    }
+    
+ 
+    .profissionais-item img {
+        transition: .5s;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    .profissionais-item:hover .profissionais-overlay {
+        opacity: 1;
+    }
+    
+    .profissionais-item .profissionais-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: .5s;
+    }
+    
+   
+    .profissionais-item:hover img {
+        transform: scale(1.1);
+    }
+    
+ 
+    .texto-card-profissionais {
+        background-color: #252525;
+        color: #fff;
+        padding: 10px 20px;
+        text-align: center;
+    }
+    
+    .texto-card-profissionais h5 {
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    
+    .texto-card-profissionais p {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+ 
+/*-----------------------------------Pagina Localização------------------------------------*/
+.hero {
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 120px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font-family: 'Oswald', sans-serif;
+    margin-top: 2vh;
+    background-image: url('../img/img-ctt.jpg');
+    background-attachment: fixed;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #252525c2;
+    z-index: 0;
+}
+
+.hero h1, .hero p {
+    position: relative; 
+    z-index: 2; 
+    color: #fff; 
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+
+
+.map-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.mapa-localizacao {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    border-radius: 15px;
+}
+
+
+.texto-endereco {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 3px solid #ccc;
+}
+
+.card-body p {
+    color: #0E121A;
+}
+
+
+.mapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.mapa h3 {
+    margin-bottom: 10px;
+}
+
+.mapa-conteudo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.mapa iframe {
+    width: 60%;
+    height: 200px;
+    border: none;
+}
+
+.mapa address {
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+    max-width: 35%;
+}
+
+
+.horarios {
+    margin-top: 20px;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.horarios h5 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.horarios ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.horarios li {
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+}
+
+.mapa address h5 {
+    color: #0E121A;
+
+}
+
+
+
+
+
+/*-----------------------------------configuração Pagina CURSOS------------------------------------*/
+
+
+.body-cursos-barbearia {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+  }
+
+
+  .img-cursos-barbearia {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .nome-curso-barbearia {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #343a40;
+  }
+  .curso-card-barbearia {
+
+    height: 100%; 
+}
+  .descricao-curso-barbearia {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+
+
+  .icon-curso-barbearia {
+    color: #f8b400;
+    text-align: center;
+  }
+
+
+  .card-footer-barbearia {
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .stars-barbearia {
+    color: #f8b400;
+  }
+
+  /* Responsividade  */
+  @media (max-width: 768px) {
+    .titulo-cursos-barbearia {
+      font-size: 2.5rem;
+    }
+
+    .texto-cursos-barbearia {
+      font-size: 1rem;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+    }
+  }
+
+.proficional-curso {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.img-profissional-curso img {
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.text-card-curso {
+    font-family: 'Rubik', sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    text-align: center;
+
+}
+
+.proficional-curso strong {
+    color: #000;
+    font-weight: bold;
+}
+
+
+.form-cursos {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-cursos h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #333;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+/*-----------------------------------configuração Pagina CONTATO ------------------------------------*/
+ .bodyContato {
+    background-image: url('../img/img-ctt.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+} 
+
+.contato-section {
+    margin-top: 15vh;
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.titulo-contato {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FDBE05;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.form-control {
+    background-color: #f8f9fa;
+    border: 1px solid #6c757d;
+    padding-left: 40px;
+}
+
+.input-group-text {
+    background-color: #f8f9fa;
+    border-right: 0;
+}
+
+.btn-submit {
+    background-color: #ffc107;
+    color: black;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #e0a800;
+}
+
+.info-section {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.info-section p {
+    margin: 10px 0;
+}
+
+.map-container {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px
+}
